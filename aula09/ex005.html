@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo os fundamentos do DOM</title>
+    <style>
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com o DOM </h1>
+    <p>Teste no. 1</p>
+    <p id="id.">Teste no. 2</p>
+    <p id="seletor">Teste no. 3</p>
+
+    <h2>Réplica com JavaScript</h2>
+    
+    <script>
+        var a = document.getElementsByTagName('p')[0]
+        var b = document.getElementById('id.')
+        var c = document.querySelector('p#seletor')
+
+        document.write(a.innerHTML + '</br>') 
+        document.write(b.innerHTML + '</br>')
+        document.write(c.innerHTML)
+    </script>
+</body>
+</html>
